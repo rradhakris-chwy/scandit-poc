@@ -1,0 +1,30 @@
+{
+  "name": "@scanning-poc/mobile-scanner",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "@scandit/web-datacapture-barcode": "^8.1.0",
+    "@scandit/web-datacapture-core": "^8.1.0",
+    "@scandit/web-datacapture-label": "^8.1.0",
+    "@scanning-poc/shared": "file:../shared",
+    "@valentynb/gs1-parser": "^1.4.0",
+    "html5-qrcode": "^2.3.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io-client": "^4.8.1",
+    "tesseract.js": "^5.1.1"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.2.0",
+    "@rsbuild/plugin-react": "^1.2.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.7.2"
+  }
+}

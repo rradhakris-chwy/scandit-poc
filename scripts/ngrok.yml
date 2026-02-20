@@ -1,0 +1,12 @@
+# ngrok config for SCAN_POC: expose mobile-scanner and socket-server so you can open the app on your Android phone.
+# Run: ngrok start mobile socket   (or: ngrok start --all)
+# Then on your phone open: <mobile URL>?socket=<socket URL>
+# Example: https://abc123.ngrok-free.app?socket=https://def456.ngrok-free.app
+version: "2"
+tunnels:
+  mobile:
+    addr: 3002
+    proto: http
+  socket:
+    addr: 4001
+    proto: http

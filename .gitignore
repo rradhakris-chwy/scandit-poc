@@ -1,0 +1,20 @@
+# Dependencies and build
+node_modules/
+dist/
+*.log
+npm-debug.log*
+
+# Environment (do not commit Scandit license key)
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
