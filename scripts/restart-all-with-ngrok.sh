@@ -41,7 +41,7 @@ if ! lsof -ti:3002 &>/dev/null || ! lsof -ti:4001 &>/dev/null; then
 fi
 
 if ! command -v ngrok &>/dev/null; then
-  echo "ngrok not found. Apps are running; install ngrok and run ./scripts/start-ngrok.sh for phone URL."
+  echo "ngrok not found. Apps are running; install ngrok and run this script again for phone URL."
   echo "  Mobile scanner: http://localhost:3002"
   exit 0
 fi
@@ -124,7 +124,7 @@ echo "========================================================================"
 echo ""
 echo "Local:  Mobile scanner http://localhost:3002  |  Dashboard http://localhost:3003"
 if [ -n "$MOBILE_URL" ] && [ -n "$SOCKET_URL" ]; then
-  echo "ngrok is running (PID $NGROK_PID). To stop: ./scripts/stop-all.sh"
+  echo "ngrok is running (PID $NGROK_PID). To stop: ./scripts/stop-apps.sh && killall ngrok"
 else
   echo "Apps are running. To stop: ./scripts/stop-apps.sh"
 fi
